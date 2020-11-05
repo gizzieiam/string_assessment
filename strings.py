@@ -68,8 +68,10 @@ def both_ends(s):
 
 def fix_start(s):
     # your code here
-    return
+    print(s.replace(s[:1], '*'))
 
+# not done
+fix_start('babble')
 
 # D. mix_up
 # Given strings a and b, return a single string with a and
@@ -83,7 +85,13 @@ def fix_start(s):
 
 def mix_up(a, b):
     # your code here
-    return
+    x = a[0:2]+ b[2:]
+    y = b[0:2] + a[2:]
+    
+
+    print(x + ' ' + y)
+
+mix_up('space', 'paul')
 
 
 # E. verbing
