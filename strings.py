@@ -50,9 +50,13 @@ donuts(14)
 #   'spring' -> 'spng'
 
 
+fix_start('babble')
+
 def both_ends(s):
     # your code here
-    return
+    print(s[0:2] + s[-2:])
+    # return
+both_ends('spring')
 
 
 # C. fix_start
