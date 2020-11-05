@@ -68,9 +68,12 @@ def both_ends(s):
 
 def fix_start(s):
     # your code here
-    print(s.replace(s[:1], '*'))
+    y = s.replace(s[:1], '*')
+    x = s[:1]+ y[1:]
 
-# not done
+    print(x)
+
+
 fix_start('babble')
 
 # D. mix_up
