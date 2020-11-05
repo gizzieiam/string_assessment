@@ -50,7 +50,6 @@ donuts(14)
 #   'spring' -> 'spng'
 
 
-fix_start('babble')
 
 def both_ends(s):
     # your code here
@@ -154,4 +153,18 @@ def not_bad(s):
 
 def front_back(a, b):
     # your code here
-    return
+    len_of_a = len(a)
+    half_of_a = len_of_a//2
+
+    len_of_b = len(b)
+    half_of_b = len_of_b//2
+
+    if len_of_a and len_of_b % 2 == 0:
+        print(a[:half_of_a]+b[:half_of_b]+ ' ' +a[half_of_a:]+b[half_of_b:])
+    else:
+        print(a[:half_of_a+1]+b[:half_of_b+1]+ ' ' +a[1+half_of_a:]+b[1+half_of_b:])
+
+
+
+front_back('hello', 'world')
+front_back('bad', 'ideas')
