@@ -112,6 +112,7 @@ def verbing(s):
     # your code here
     x= s[-3:]
     y = 'ing'
+    
     print(s)
     # print(x)
     if len(s)< 3:
@@ -120,8 +121,11 @@ def verbing(s):
         if x == y:
             print(s)
         else:
-            print(s+y)
-# come back and do a check to see if last letter is vowel
+            if 'a' or 'e' or 'i' or 'u' == s[:-1]:
+                print(s.replace(s[:-1], y))
+            else:
+                print(s+y)
+
 verbing('space')
 verbing('spacing')
 verbing('it')
