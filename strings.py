@@ -15,7 +15,7 @@ Kenzie assignment: Strings!
 
 # Your name, plus anyone who helped you with this assignment.
 # Give credit where credit is due.
-__author__ = "???"
+__author__ = "Shavonne Carson"
 
 # A. donuts
 # Given an int count of a number of donuts, return a string
@@ -29,7 +29,16 @@ __author__ = "???"
 
 def donuts(count):
     # your code here
-    return
+    x =''
+    if count< 10:
+        x = 'Number of donuts: ' + str(count)
+    else:
+        x = 'Number of donuts: Many'
+    
+    print(x) 
+
+donuts(4)
+donuts(14)
 
 
 # B. both_ends
