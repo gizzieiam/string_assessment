@@ -138,8 +138,18 @@ verbing('it')
 
 def not_bad(s):
     # your code here
-    return
+    is_bad = 'bad'
+    is_not = 'not'
 
+    if s.index(is_bad) > s.index(is_not):
+        print(s.replace(s[s.index(is_not):s.index(is_bad)+3], 'good'))
+    else:
+        print(s)
+
+
+not_bad('This dinner is not that bad!')
+not_bad('She is giving off not bad vibes.')
+not_bad('Trying bad before not.')
 
 # G. front_back
 # Consider dividing a string into two halves.
