@@ -111,7 +111,21 @@ mix_up('space', 'paul')
 
 def verbing(s):
     # your code here
-    return
+    x= s[-3:]
+    y = 'ing'
+    print(s)
+    # print(x)
+    if len(s)< 3:
+        print(s+'ly')
+    elif len(s) > 3:
+        if x == y:
+            print(s)
+        else:
+            print(s+y)
+# come back and do a check to see if last letter is vowel
+verbing('space')
+verbing('spacing')
+verbing('it')
 
 
 # F. not_bad
